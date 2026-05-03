@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOLIO — Culinary Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-trail" id="cursorTrail" aria-hidden="true"></div>
+
+  <header class="hero" role="banner">
+    <div class="hero-noise" aria-hidden="true"></div>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-brand">FOLIO</div>
+      <div class="nav-tagline">Culinary Archive / Vol. I</div>
+      <a href="#contactSection" class="nav-contact-link">CONTACT US</a>
+      <div class="nav-count" id="navCount">20 Recipes</div>
+    </nav>
+    <div class="hero-body">
+      <div class="hero-kicker">The Definitive</div>
+      <h1 class="hero-title">
+        <span class="hero-title-line" data-reveal>CULINARY</span>
+        <span class="hero-title-line italic" data-reveal>Archive.</span>
+      </h1>
+      <p class="hero-sub" data-reveal>
+        Twenty essential recipes. Flip to reveal. Explore to obsess.
+      </p>
+      <div class="hero-scroll-cue" aria-hidden="true">
+        <span>SCROLL</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <div class="hero-ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>PASTA · RISOTTO · TARTARE · SOUFFLÉ · RAMEN · CEVICHE · PAELLA · TAGINE · BOUILLABAISSE · TIRAMISU ·&nbsp;</span>
+        <span>PASTA · RISOTTO · TARTARE · SOUFFLÉ · RAMEN · CEVICHE · PAELLA · TAGINE · BOUILLABAISSE · TIRAMISU ·&nbsp;</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="filter-bar" aria-label="Filter recipes">
+    <div class="filter-inner">
+      <span class="filter-label">FILTER:</span>
+      <div class="filter-pills" role="group" aria-label="Category filters">
+        <button class="pill active" data-filter="all" aria-pressed="true">All</button>
+        <button class="pill" data-filter="savory" aria-pressed="false">Savory</button>
+        <button class="pill" data-filter="sweet" aria-pressed="false">Sweet</button>
+        <button class="pill" data-filter="seafood" aria-pressed="false">Seafood</button>
+        <button class="pill" data-filter="vegetarian" aria-pressed="false">Vegetarian</button>
+      </div>
+      <div class="filter-search-wrap">
+        <label for="searchInput" class="sr-only">Search recipes</label>
+        <input type="search" id="searchInput" class="search-input" placeholder="Search recipes…" aria-label="Search recipes">
+      </div>
+    </div>
+  </section>
+
+  <main class="grid-section" id="recipeGrid" role="main" aria-label="Recipe collection">
+  </main>
+
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <button class="modal-close" id="modalClose" aria-label="Close recipe detail">✕</button>
+    <div class="modal-panel" id="modalPanel">
+      <div class="modal-img-wrap">
+        <img class="modal-img" id="modalImg" src="" alt="">
+        <div class="modal-img-badge" id="modalImgBadge"></div>
+      </div>
+      <div class="modal-content">
+        <div class="modal-kicker" id="modalKicker"></div>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-meta-row">
+          <div class="modal-meta-item"><span class="meta-label">TIME</span><span class="meta-val" id="modalTime"></span></div>
+          <div class="modal-meta-item"><span class="meta-label">SERVES</span><span class="meta-val" id="modalServes"></span></div>
+          <div class="modal-meta-item"><span class="meta-label">LEVEL</span><span class="meta-val" id="modalLevel"></span></div>
+        </div>
+        <div class="modal-columns">
+          <div class="modal-col">
+            <h3 class="modal-col-head">Ingredients</h3>
+            <ul class="ingredient-list" id="modalIngredients" aria-label="Ingredients"></ul>
+          </div>
+          <div class="modal-col">
+            <h3 class="modal-col-head">Method</h3>
+            <ol class="method-list" id="modalMethod" aria-label="Cooking method"></ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" id="contactSection" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">FOLIO</div>
+      <div class="contact-info">
+        <h4>CONTACT US</h4>
+        <p><strong>Claude Fournier</strong> | Culinary Artist</p>
+        <p>New York, NY, 21223</p>
+        <p>Phone: 234-8374</p>
+        <p>Email: <a href="mailto:claude@culinaryartistry.com">claude@culinaryartistry.com</a></p>
+      </div>
+      <div class="footer-copy">Culinary Archive · Vol. I · 2026</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
