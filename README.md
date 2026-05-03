@@ -7,7 +7,7 @@ A high-performance, visually-driven culinary catalog, designed as a fusion of th
 🚀 **[Launch — Culinary Archive](https://jdbostonbu-ops.github.io/Claude-fused-culinary-recipe-page/)**
 
 <div align="center">
-  <img src="premium_photo-1692781059203-3c4e76576845.avif" width="100%" alt="Culinary Archive Demo">
+  <img src="src/folio.gif" width="100%" alt="Culinary Archive Demo">
 </div>
 
 ---
